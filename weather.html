@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEATHER APP</title>
+    <link rel="stylesheet" href="weather.css">
+</head>
+<body>
+    <div class="header">
+        <h1>WEATHER APP</h1>
+        <div>
+            <input type="text" name="" id="input" placeholder="Enter city name">
+            <button id="search" onclick="searchByCity()">Search</button></input>
+        </div>
+    </div>
+
+    <main>        
+        <div class="weather">
+            <h2 id="city">Rivne,UA</h2>
+            <div class="temp-box">
+                <img src="weathericon.png" alt="" id="img" title="">
+                <p id="temperature">15 °C</p>
+            </div>
+            <span id="clouds">Overcast Clouds</span>
+        </div>
+        <div class="divider1"></div>
+
+        <div class="forecstH">
+            <p class="cast-header">Upcoming forecast</p>
+            <div class="templist">
+
+                <div class="next">
+                    <div>
+                        <p class="time">8:30 PM</p>
+                        
+                        <p>18 °C / 16 °C</p>
+                    </div>
+                    <img src="weathericon.png" alt="" id="im" title="">
+                    <p class="desc">Light Rain</p>
+                </div>
+
+                <div class="next">
+                    <div>
+                        <p class="time">8:30 PM</p>
+                        <p>19 °C / 18 °C</p>
+                    </div>
+                    <img src="weathericon.png" alt="" id="im" title="">
+                    <p class="desc">Light Rain</p>
+                </div>
+
+                <div class="next">
+                    <div>
+                        <p class="time">8:30 PM</p>
+                        <p>19 °C / 19 °C</p>
+                    </div>
+                    <img src="weathericon.png" alt="" id="im" title="">
+                    <p class="desc">Light Rain</p>
+                </div>
+
+                <div class="next">
+                    <div>
+                        <p class="time">8:30 PM</p>
+                        <p>15 °C / 15 °C</p>
+                    </div>
+                    <img src="weathericon.png" alt="" id="im" title="">
+                    <p class="desc">Light Rain</p>
+                </div>
+
+                <div class="next">
+                    <div>
+                        <p class="time">8:30 PM</p>
+                        <p>12 °C / 12 °C</p>
+                    </div>
+                    <img src="weathericon.png" alt="" id="im" title="">
+                    <p class="desc">Light Rain</p>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <div class="forecstD">
+        <div class="divider2"></div>
+        <p class="cast-header"> Next 4 days forecast</p>
+        <div class="weekF">
+
+            <div class="dayF">
+                <p class="date">Wed May 24 2023</p>
+                <p>20 °C / 20 °C</p>
+                <div class="templist">
+
+                    <div class="next">
+                        <div>
+                            <p class="time">8:30 PM</p>
+                            
+                            <p>18 °C / 16 °C</p>
+                        </div>
+                        <img src="weathericon.png" alt="" id="im" title="">
+                        
+                    </div>
+    
+                    <div class="next">
+                        <div>
+                            <p class="time">8:30 PM</p>
+                            <p>19 °C / 18 °C</p>
+                        </div>
+                        <img src="weathericon.png" alt="" id="im" title="">
+                        
+                    </div>
+    
+                    <div class="next">
+                        <div>
+                            <p class="time">8:30 PM</p>
+                            <p>19 °C / 19 °C</p>
+                        </div>
+                        <img src="weathericon.png" alt="" id="im" title="">
+                        
+                    </div>
+    
+                    <div class="next">
+                        <div>
+                            <p class="time">8:30 PM</p>
+                            <p>15 °C / 15 °C</p>
+                        </div>
+                        <img src="weathericon.png" alt="" id="im" title="">
+                        
+                    </div>
+    
+                </div>
+                
+            </div>
+
+            <div class="dayF">
+                <p class="date">Wed May 24 2023</p>
+                <p>20 °C / 20 °C</p>
+                <p class="desc">Overcast Clouds</p>
+            </div>
+
+            <div class="dayF">
+                <p class="date">Wed May 24 2023</p>
+                <p>20 °C / 20 °C</p>
+                <p class="desc">Overcast Clouds</p>
+            </div>
+
+            <div class="dayF">
+                <p class="date">Wed May 24 2023</p>
+                <p>20 °C / 20 °C</p>
+                <p class="desc">Overcast Clouds</p>
+            </div>
+        </div>
+    </div>
+    
+      
+      
+      
+    <script src="weather.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
+</body>
+</html>
